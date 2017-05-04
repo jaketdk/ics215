@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter the year of manufacture: "
+read a
+echo "Enter the length of warranty: "
+read b
+currentYear=2017
+temp=$(($currentYear - $a - $b))
+if [ "$temp" -gt  0 ]; then
+	echo "Your warranty is invalid."
+else
+echo "Your warranty is valid."
+
+fi
